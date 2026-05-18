@@ -1,4 +1,4 @@
-// Arithmetic operator
+// Arithmetic operator ( 6 types )
 let a = 0;
 let b = 10;
 console.log(a + b); // Addition operator
@@ -6,6 +6,15 @@ console.log(a - b); // Subtraction operator
 console.log(a * b); // Multipilcation operator
 console.log(b / a); // Infinity - Divison operator
 console.log(a/b); // 0 - Division operator
+// ***Future Topic:
+let c = 9;
+let d = 2;
+console.log(c%d); // 1 Remainder - Modulus operators
+let base = 2; // (Base)
+let power = 3; // (Exponent)
+console.log(base ** power); // 8 - Exponentiation operators
+
+
 
 // Assignment operator
 const name = "gk";
