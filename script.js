@@ -4,7 +4,8 @@ let b = 10;
 console.log(a + b); // Addition operator
 console.log(a - b); // Subtraction operator
 console.log(a * b); // Multipilcation operator
-console.log(b / a); // Divison operator
+console.log(b / a); // Infinity - Divison operator
+console.log(a/b); // 0 - Division operator
 
 // Assignment operator
 const name = "gk";
