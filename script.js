@@ -17,49 +17,54 @@ console.log(base ** power); // 8 - Exponentiation operators
 
 
 // Assignment operator
-const name = "gk";
+const name = "gk"; // Basic Assignment
 // pre-increment | post-increment
 let num = 10;
-num += 18; // pre-increment
+num += 18; // pre-increment - 28
 console.log(num);
 
 let age = 13;
-age =+ 18; // post-increment
+age =+ 18; // post-increment - 18
+age = 18; // post-increment - 18 ( generally this type common used)
 console.log(age);
 
-// Comparison Operator
-let eligibleAge = 18;
-let userAge = "18";
-console.log(userAge > 18); // greater than | greater than or equal to
-console.log(userAge <= 50); // lesser than | lesser than or equal to
+//// Comparison Operator
+let eligibleAge = 18; 
+let userAge = 28;
+console.log(userAge < eligibleAge ); // false - lesser than
+console.log(userAge > eligibleAge ); // true - greater than
+console.log(userAge >= eligibleAge); // true - greater than or equal
+console.log(userAge <= eligibleAge); // false - lesser than or equal
 
 // == | ===
 // == (double equal to checks the value)
 // === (triple equal to checks the value and data-type)
-
-console.log(eligibleAge == userAge);
-console.log(eligibleAge === userAge);
+let myNumber = 18; 
+let myString = "18";
+console.log(myNumber == myString); // type coercion
+console.log(myNumber === myString); // Strict Equality - mostltly preferrable - best way 
 
 // Ternary operator
 // ? -> true block : -> false block
-let isAdmin = false;
-isAdmin ? console.log("Welcome admin")
- : console.log("Welcome user");
-
+Type:1
+let loginIn = true;
+loginIn ? console.log("login successfully")
+: console.log("please login");
+Type:2
 let mark = 340;
-mark >= 345 ? console.log("Pass") 
-: console.log("Fail");
-
-let password = "gk@321";
-
-password === "gk@321" ? console.log("You're logged in")
-: console.log("Invalid password");
+// mark >=345 ? console.log("pass")
+// : console.log("fail");
+let result = mark >=345 ? "Pass" : "Fail"
+console.log(result);
+Type:3
+let mail = "guna@gmail.com"
+mail === "guna@gmail.com" ? console.log("Email Register SuccessFully")
+: console.log("Check Your Email");
 
 // Expressions
-let username = "gk";
-console.log("You're successfully logged in " + username);
-console.log("You're successfully logged in", username);
-
-// backtricks (``)
+let userName = "gk";
+console.log("You're successfully logged in" + userName); // You're successfully logged ingk - avoid this method
+console.log("You're successfully logged in", userName); // You're successfully logged in gk - avoid this method
+// backtricks (``) - used this way only global standard
 // curly brackets {}
-console.log(`You're successfully logged in ${username} welcome back`);
+console.log(`You're Successfully Logged in ${userName} Welcome Back `);//
